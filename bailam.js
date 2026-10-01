@@ -101,17 +101,17 @@ do{
 
             inputTicketCode.trim()
 
-            isInRange = false
-            for(let i = 0; i<= inputTicketCode.length; i++ ){
-                if(inputTicketCode[i] > 0 || inputTicketCode[i] > 9){
-                 isInRange = true
-                }
+            let reveseCode = ""
+            let isreverse = false
+            for(let i = inputTicketCode.length - 1; i <=0; i--){
+                reveseCode += i
             }
 
-            if(isInRange === true){
-                console.log("mã phải nằm trong khoảng từ 0 đến 9");
-                break;
+            if(reveseCode === inputTicketCode){
+                isreverse = true
             }
+            
+        break;
         case "0":
             console.log("Hẹn gặp lại bạn !");
             break
