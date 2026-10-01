@@ -70,11 +70,11 @@ do{
 
             pricePerTicket = Number(prompt("Nhập vào số tiền mỗi vé: "))
 
-            if(ticketCount=== ""){
+            if(pricePerTicket=== ""){
                 console.log("Mảng không được rỗng");
                 break;
             }
-            
+
             if(Number.isInteger(pricePerTicket)||Number.isNaN(pricePerTicket)|| pricePerTicket <= 0){
                 console.log("Nhập sai định dạng");
                 continue;
